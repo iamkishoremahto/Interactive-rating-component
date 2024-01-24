@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Overpass", sans-serif;
+}
+
+.main_wrapper,
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main_wrapper {
+  width: 100vw;
+  height: 100vh;
+  background-color: hsl(216, 12%, 8%);
+}
+
+.rating_component {
+  background: rgb(34, 41, 51);
+  background: linear-gradient(180deg, rgb(34, 41, 51) 0%, rgb(22, 29, 39) 100%);
+  width: 375px;
+  height: 410px;
+  padding: 30px;
+  border-radius: 25px;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+.rating_component .rating_logo {
+  min-height: 50px;
+  width: 50px;
+  background-color: #29333e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.rating_component .rating_logo img {
+  height: 35%;
+}
+.rating_component .feedback_content {
+  color: hsl(0, 0%, 100%);
+}
+.rating_component .feedback_content h3 {
+  font-weight: 700;
+}
+.rating_component .feedback_content p {
+  color: hsl(216, 12%, 54%);
+}
+.rating_component .rate_us ul {
+  padding-left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+.rating_component .rate_us ul li {
+  color: hsl(216, 12%, 54%);
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #29333e;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all ease 0.3s;
+  font-weight: 700;
+}
+.rating_component .rate_us ul li:hover {
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+}
+.rating_component .rate_us ul .rate_click {
+  background-color: hsl(216, 12%, 54%);
+  color: hsl(0, 0%, 100%);
+}
+.rating_component .submit_button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.get_rating {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.myBtn {
+  width: 100%;
+  padding: 10px 15px;
+  border: none;
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 25px;
+  transition: all ease 0.3s;
+}
+.myBtn:hover {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(25, 97%, 53%);
+}
+
+.rating_component .feedback_success_image,
+.rating_component .selected_ratings,
+.rating_component .thank_you_content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rating_component .feedback_success_image img {
+  height: 100px;
+}
+.rating_component .selected_ratings p {
+  color: hsl(25, 97%, 53%);
+  margin-bottom: 0;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  padding: 5px 25px;
+  font-weight: 700;
+  background-color: #29333e;
+  border-radius: 25px;
+}
+.rating_component .selected_ratings p span {
+  margin-left: 4px;
+  margin-right: 4px;
+}
+.rating_component .thank_you_content {
+  flex-direction: column;
+}
+.rating_component .thank_you_content h3 {
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+}
+.rating_component .thank_you_content p {
+  color: hsl(216, 12%, 54%);
+  text-align: center;
+}
+
+@media screen and (max-width: 375px) {
+  .rating_component {
+    width: 350px;
+  }
+}
